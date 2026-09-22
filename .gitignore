@@ -1,0 +1,16 @@
+# Bytecode written next to the scripts the moment seed.py imports catalogue.
+__pycache__/
+*.pyc
+
+# make_pictures.py leaves behind the page it renders and the sheet it cuts; only img/ is worth
+# keeping, and it is versioned on purpose so seeding needs no browser.
+grid.html
+grid.png
+
+# Local installs of requests and Pillow.
+.venv/
+venv/
+
+# Nothing here writes one, but seed.py reads the infrastructure .env: in a public repository a
+# stray copy is worth refusing outright.
+.env
